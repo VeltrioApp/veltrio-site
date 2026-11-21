@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Veltrio — Votre cinéma, sur tous vos écrans.</title>
+  <meta name="description" content="Addons Stremio, débrideurs, Plex/Jellyfin/Emby et IPTV avec EPG & Replay réunis dans un seul lecteur natif 4K HDR gratuit et open source pour Mac, Windows, iPhone, iPad, Apple TV, Android et Android TV." />
+  <meta property="og:title" content="Veltrio — Votre cinéma, sur tous vos écrans." />
+  <meta property="og:description" content="Addons Stremio, débrideurs, serveurs personnels et TV en direct dans un seul lecteur natif gratuit, rapide et sans publicité." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://veltrioapp.com" />
+  <meta property="og:image" content="https://veltrioapp.com/assets/tvos-home.jpg" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#" class="brand-wordmark">Veltrio</a>
+
+      <ul class="nav-links">
+        <li><a href="#features" data-i18n="nav.features">Fonctionnalités</a></li>
+        <li><a href="#living-room" data-i18n="nav.livingRoom">Salon &amp; TV</a></li>
+        <li><a href="#everywhere" data-i18n="nav.everywhere">Mobile &amp; Tablette</a></li>
+        <li><a href="#download" data-i18n="nav.download">Télécharger</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <div class="lang-toggle" role="group" aria-label="Language">
+          <button type="button" data-lang="fr" class="active">FR</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+        <a class="btn btn-primary btn-sm" href="#download" data-i18n="nav.cta">Télécharger</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span data-i18n="hero.badge">Gratuit · Open source · Sans pub</span>
+      </div>
+
+      <h1 class="hero-title" data-i18n="hero.title">Votre cinéma,<br />sur <em>tous vos écrans</em>.</h1>
+
+      <p class="hero-lead" data-i18n="hero.lead">
+        Addons Stremio, débrideurs 4K, serveurs Plex / Jellyfin / Emby et IPTV avec guide TV — réunis dans un seul lecteur natif ultra-rapide sur 6 plateformes.
+      </p>
+
+      <div class="hero-cta">
+        <a id="hero-primary-cta" href="#download" class="btn btn-primary" data-i18n="hero.ctaPrimary">Télécharger Veltrio</a>
+        <a href="#features" class="btn" data-i18n="hero.ctaSecondary">Voir les fonctionnalités</a>
+      </div>
+
+      <div class="hero-platforms">
+        <span>macOS</span>
+        <span>Windows</span>
+        <span>iPhone &amp; iPad</span>
+        <span>Apple TV</span>
+        <span>Android</span>
+        <span>Android TV</span>
+      </div>
+
+      <!-- Interactive Real Screenshot Showcase -->
+      <div class="showcase">
+        <div class="showcase-pills" role="tablist">
+          <button class="showcase-tab active" role="tab" data-slide="tvos-home" data-i18n="tab.tvhome">Apple TV</button>
+          <button class="showcase-tab" role="tab" data-slide="ios-duo" data-i18n="tab.iphone">iPhone</button>
+          <button class="showcase-tab" role="tab" data-slide="ipad-home" data-i18n="tab.ipad">iPad</button>
+          <button class="showcase-tab" role="tab" data-slide="tvos-player" data-i18n="tab.player">Lecteur 4K</button>
+          <button class="showcase-tab" role="tab" data-slide="androidtv-player" data-i18n="tab.androidtv">Android TV</button>
+        </div>
+
+        <div class="showcase-stage">
+          <div class="showcase-frame" id="showcase-frame">
+            <img src="assets/tvos-home.jpg" alt="Veltrio sur Apple TV" />
+          </div>
+          <p class="showcase-caption" id="showcase-caption-text" data-i18n="cap.tvhome">
+            Une interface de salon noire et ambre pensée pour le grand écran : films à l’affiche, catalogues et reprise immédiate.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compatible Ecosystem Strip -->
+  <section class="ecosystem">
+    <div class="container ecosystem-inner">
+      <span class="ecosystem-label" data-i18n="eco.label">Compatible avec vos services</span>
+      <div class="ecosystem-logos">
+        <span class="eco-pill">Stremio Addons</span>
+        <span class="eco-pill">Real-Debrid</span>
+        <span class="eco-pill">AllDebrid</span>
+        <span class="eco-pill">TorBox</span>
+        <span class="eco-pill">Premiumize</span>
+        <span class="eco-pill">Plex</span>
+        <span class="eco-pill">Jellyfin</span>
+        <span class="eco-pill">Emby</span>
+        <span class="eco-pill">Xtream &amp; M3U</span>
+        <span class="eco-pill">Trakt &amp; SIMKL</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Real Features Bento Grid -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-kicker" data-i18n="feat.kicker">Tout ce qui compte</div>
+        <h2 class="section-title" data-i18n="feat.title">Une fiche unique. Toutes vos sources.</h2>
+        <p class="section-desc" data-i18n="feat.desc">
+          Fini de jongler entre quatre applications. Veltrio rassemble vos addons, vos débrideurs, vos serveurs personnels et vos chaînes en direct dans une expérience native fluide.
+        </p>
+      </div>
+
+      <div class="bento-grid">
+        <article class="bento-card wide reveal">
+          <span class="bento-num">01</span>
+          <h3 data-i18n="f1.title">Addons Stremio &amp; Import 1-clic</h3>
+          <p data-i18n="f1.desc">
+            Connectez votre compte Stremio dès le premier lancement pour importer instantanément tous vos addons, votre bibliothèque et votre historique de lecture — synchronisé automatiquement à chaque ouverture.
+          </p>
+          <div class="bento-tags">
+            <span class="bento-tag">Cinemeta</span>
+            <span class="bento-tag">Import compte Stremio</span>
+            <span class="bento-tag">Synchro historique</span>
+            <span class="bento-tag">Catalogue communautaire</span>
+          </div>
+        </article>
+
+        <article class="bento-card reveal">
+          <span class="bento-num">02</span>
+          <h3 data-i18n="f2.title">Débrideurs 4K intégrés</h3>
+          <p data-i18n="f2.desc">
+            Liez Real-Debrid, AllDebrid, TorBox ou Premiumize par simple code PIN (sans copier de clé) pour lancer vos flux 4K HDR mis en cache instantanément.
+          </p>
+          <div class="bento-tags">
+            <span class="bento-tag">Real-Debrid</span>
+            <span class="bento-tag">AllDebrid</span>
+            <span class="bento-tag">TorBox</span>
+            <span class="bento-tag">Premiumize</span>
+          </div>
+        </article>
+
+        <article class="bento-card reveal">
+          <span class="bento-num">03</span>
+          <h3 data-i18n="f3.title">Plex, Jellyfin &amp; Emby</h3>
+          <p data-i18n="f3.desc">
+            Vos films et séries hébergés chez vous apparaissent automatiquement sur les fiches Veltrio, avec reprise de lecture exacte et synchronisation Trakt / SIMKL.
+          </p>
+          <div class="bento-tags">
+            <span class="bento-tag">Plex</span>
+            <span class="bento-tag">Jellyfin</span>
+            <span class="bento-tag">Emby</span>
+            <span class="bento-tag">Trakt &amp; SIMKL</span>
+          </div>
+        </article>
+
+        <article class="bento-card reveal">
+          <span class="bento-num">04</span>
+          <h3 data-i18n="f4.title">TV en direct, EPG &amp; Replay</h3>
+          <p data-i18n="f4.desc">
+            Importez vos playlists M3U ou comptes Xtream Codes : programme en cours et suivant, grille TV complète, zapping instantané depuis le lecteur et catch-up replay.
+          </p>
+          <div class="bento-tags">
+            <span class="bento-tag">Xtream Codes</span>
+            <span class="bento-tag">M3U / EPG</span>
+            <span class="bento-tag">Zapping rapide</span>
+            <span class="bento-tag">Replay</span>
+          </div>
+        </article>
+
+        <article class="bento-card reveal">
+          <span class="bento-num">05</span>
+          <h3 data-i18n="f5.title">Lecteur natif libmpv 4K HDR</h3>
+          <p data-i18n="f5.desc">
+            Propulsé par libmpv avec accélération matérielle, audio multicanal, mémorisation de vos langues audio/sous-titres, AirPlay, Chromecast, Picture-in-Picture et téléchargement hors-ligne.
+          </p>
+          <div class="bento-tags">
+            <span class="bento-tag">4K HDR</span>
+            <span class="bento-tag">AirPlay &amp; Cast</span>
+            <span class="bento-tag">Hors-ligne</span>
+            <span class="bento-tag">PiP</span>
+          </div>
+        </article>
+
+        <article class="bento-card wide reveal">
+          <span class="bento-num">06</span>
+          <h3 data-i18n="f6.title">Configurez votre TV en 10 secondes depuis votre téléphone</h3>
+          <p data-i18n="f6.desc">
+            Plus jamais d’URL ou de mot de passe à taper à la télécommande : ouvrez Veltrio sur votre Apple TV ou Android TV, saisissez le code à 6 chiffres depuis votre iPhone ou Mac, et tous vos addons, comptes, playlists IPTV et votre Collection sont transférés en chiffré sur le réseau local.
+          </p>
+          <div class="bento-tags">
+            <span class="bento-tag">Appairage LAN chiffré</span>
+            <span class="bento-tag">Code à 6 chiffres</span>
+            <span class="bento-tag">Apple TV &amp; Android TV</span>
+          </div>
+        </article>
+
+        <article class="bento-card reveal">
+          <span class="bento-num">07</span>
+          <h3 data-i18n="f7.title">Mises à jour auto &amp; Zéro pub</h3>
+          <p data-i18n="f7.desc">
+            Mises à jour intégrées sur macOS, Windows, Android et Android TV avec confirmation avant téléchargement. 100 % open source, sans tracking et sans compte Veltrio obligatoire.
+          </p>
+          <div class="bento-tags">
+            <span class="bento-tag">Open Source</span>
+            <span class="bento-tag">Auto-update</span>
+            <span class="bento-tag">Privé</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Living Room Spotlight -->
+  <section class="section section-alt" id="living-room">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-kicker" data-i18n="tv.kicker">Dans votre salon</div>
+        <h2 class="section-title" data-i18n="tv.title">Taillé pour le grand écran et la télécommande.</h2>
+        <p class="section-desc" data-i18n="tv.desc">
+          Sur Apple TV, Android TV, Google TV ou Nvidia Shield, chaque geste est pensé pour le canapé.
+        </p>
+      </div>
+
+      <div class="split reveal">
+        <div class="split-media">
+          <img src="assets/tvos-player.jpg" alt="Lecteur Veltrio sur Apple TV" />
+        </div>
+        <div class="split-points">
+          <div class="point">
+            <h3 data-i18n="tv1.title">Timeline focusable &amp; avance progressive</h3>
+            <p data-i18n="tv1.desc">Prenez directement la main sur la barre de progression avec la télécommande : sauts progressifs fluides, passage à l’épisode suivant et contrôles en verre fumé discrets.</p>
+          </div>
+          <div class="point">
+            <h3 data-i18n="tv2.title">Menus audio &amp; sous-titres sur-mesure</h3>
+            <p data-i18n="tv2.desc">Changez de piste audio, activez vos sous-titres ou choisissez un autre flux sans jamais quitter le film.</p>
+          </div>
+          <div class="point">
+            <h3 data-i18n="tv3.title">Appairage express depuis votre iPhone ou Mac</h3>
+            <p data-i18n="tv3.desc">Dès l’écran de bienvenue sur la TV, un seul clic suffit pour recevoir toute votre configuration en quelques secondes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mobile & Tablet Spotlight -->
+  <section class="section" id="everywhere">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-kicker" data-i18n="mob.kicker">Partout avec vous</div>
+        <h2 class="section-title" data-i18n="mob.title">Commencez sur iPhone. Continuez sur iPad ou TV.</h2>
+        <p class="section-desc" data-i18n="mob.desc">
+          Une interface native soignée sur chaque appareil : navigation Liquid Glass sur iOS 27, grand format éditorial sur iPad et macOS, fluide sur Android et Windows.
+        </p>
+      </div>
+
+      <div class="split reverse reveal">
+        <div class="split-points">
+          <div class="point">
+            <h3 data-i18n="mob1.title">Reprenez exactement où vous étiez</h3>
+            <p data-i18n="mob1.desc">Votre rangée « Reprendre » se synchronise avec Stremio, Trakt et vos serveurs personnels pour retrouver chaque film et épisode à la seconde près.</p>
+          </div>
+          <div class="point">
+            <h3 data-i18n="mob2.title">Téléchargement hors-ligne</h3>
+            <p data-i18n="mob2.desc">Téléchargez vos films et épisodes avant un vol ou un trajet en train, directement dans l’application.</p>
+          </div>
+          <div class="point">
+            <h3 data-i18n="mob3.title">Recherche globale instantanée</h3>
+            <p data-i18n="mob3.desc">Un seul champ cherche simultanément dans tous vos addons, vos chaînes IPTV et vos médiathèques locales.</p>
+          </div>
+        </div>
+        <div class="split-media">
+          <img src="assets/ipad-home.jpg" alt="Veltrio sur iPad" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section class="section section-alt" id="download">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="section-kicker" data-i18n="dl.kicker">Télécharger</div>
+        <h2 class="section-title" data-i18n="dl.title">Disponible sur vos 6 plateformes.</h2>
+        <p class="section-desc" data-i18n="dl.desc">
+          100 % gratuit, sans publicité et open source. Téléchargez la dernière version officielle directement depuis GitHub.
+        </p>
+      </div>
+
+      <div class="dl-grid">
+        <!-- macOS -->
+        <article class="dl-card featured reveal" data-repo="veltrio-macos" data-ext=".dmg">
+          <div class="dl-top">
+            <h3 class="dl-name">macOS</h3>
+            <span class="dl-version" data-dl-version>v0.2.2</span>
+          </div>
+          <p class="dl-desc" data-i18n="dl.macosDesc">Pour Mac Apple Silicon et Intel (macOS 14+). Mises à jour automatiques Sparkle incluses.</p>
+          <div class="dl-actions">
+            <a class="btn btn-primary" data-dl-link href="https://github.com/VeltrioApp/veltrio-macos/releases/latest/download/Veltrio-0.2.2.dmg" data-i18n="dl.macosBtn">Télécharger (.dmg)</a>
+            <a class="dl-sub" href="https://github.com/VeltrioApp/veltrio-macos/releases" target="_blank" rel="noopener" data-i18n="dl.allBuilds">Notes de version &amp; archives →</a>
+          </div>
+        </article>
+
+        <!-- Windows -->
+        <article class="dl-card featured reveal" data-repo="veltrio-windows" data-ext="-Setup.exe">
+          <div class="dl-top">
+            <h3 class="dl-name">Windows</h3>
+            <span class="dl-version" data-dl-version>v0.2.0</span>
+          </div>
+          <p class="dl-desc" data-i18n="dl.winDesc">Pour Windows 10 et 11 (64-bit). Installeur léger sans droits admin avec mises à jour automatiques.</p>
+          <div class="dl-actions">
+            <a class="btn btn-primary" data-dl-link href="https://github.com/VeltrioApp/veltrio-windows/releases/latest/download/VeltrioApp-win-Setup.exe" data-i18n="dl.winBtn">Télécharger (.exe)</a>
+            <a class="dl-sub" href="https://github.com/VeltrioApp/veltrio-windows/releases" target="_blank" rel="noopener" data-i18n="dl.allBuilds">Version portable &amp; archives →</a>
+          </div>
+        </article>
+
+        <!-- Android -->
+        <article class="dl-card reveal" data-repo="veltrio-android" data-ext="-release.apk">
+          <div class="dl-top">
+            <h3 class="dl-name">Android</h3>
+            <span class="dl-version" data-dl-version>v0.2.0</span>
+          </div>
+          <p class="dl-desc" data-i18n="dl.androidDesc">Pour smartphones et tablettes Android (Android 8+). APK signé avec mises à jour intégrées.</p>
+          <div class="dl-actions">
+            <a class="btn btn-primary" data-dl-link href="https://github.com/VeltrioApp/veltrio-android/releases/latest/download/app-release.apk" data-i18n="dl.androidBtn">Télécharger (.apk)</a>
+            <a class="dl-sub" href="https://github.com/VeltrioApp/veltrio-android/releases" target="_blank" rel="noopener" data-i18n="dl.allBuilds">Notes de version &amp; archives →</a>
+          </div>
+        </article>
+
+        <!-- Android TV -->
+        <article class="dl-card reveal" data-repo="veltrio-androidtv" data-ext="-release.apk">
+          <div class="dl-top">
+            <h3 class="dl-name">Android TV</h3>
+            <span class="dl-version" data-dl-version>v0.2.0</span>
+          </div>
+          <p class="dl-desc" data-i18n="dl.atvDesc">Pour téléviseurs et box Android TV, Google TV, Nvidia Shield et Freebox. Appairage rapide inclus.</p>
+          <div class="dl-actions">
+            <a class="btn btn-primary" data-dl-link href="https://github.com/VeltrioApp/veltrio-androidtv/releases/latest/download/tv-release.apk" data-i18n="dl.atvBtn">Télécharger (.apk)</a>
+            <a class="dl-sub" href="https://github.com/VeltrioApp/veltrio-androidtv/releases" target="_blank" rel="noopener" data-i18n="dl.allBuilds">Notes de version &amp; archives →</a>
+          </div>
+        </article>
+
+        <!-- iOS & iPadOS -->
+        <article class="dl-card reveal" data-repo="veltrio-ios" data-ext=".ipa">
+          <div class="dl-top">
+            <h3 class="dl-name">iPhone &amp; iPad</h3>
+            <span class="dl-version muted" data-dl-version data-i18n="dl.soon">TestFlight bientôt</span>
+          </div>
+          <p class="dl-desc" data-i18n="dl.iosDesc">Application native SwiftUI pour iOS 17+ et iPadOS. Disponible en open source, TestFlight en préparation.</p>
+          <div class="dl-actions">
+            <a class="btn" data-dl-link href="https://github.com/VeltrioApp/veltrio-ios" target="_blank" rel="noopener" data-i18n="dl.iosBtn">Voir sur GitHub</a>
+            <a class="dl-sub" href="https://github.com/VeltrioApp/veltrio-ios/releases" target="_blank" rel="noopener" data-i18n="dl.allBuilds">Releases GitHub →</a>
+          </div>
+        </article>
+
+        <!-- Apple TV -->
+        <article class="dl-card reveal" data-repo="veltrio-tvos" data-ext=".ipa">
+          <div class="dl-top">
+            <h3 class="dl-name">Apple TV</h3>
+            <span class="dl-version muted" data-dl-version data-i18n="dl.soon">TestFlight bientôt</span>
+          </div>
+          <p class="dl-desc" data-i18n="dl.tvosDesc">Application native tvOS 18+ pour Apple TV HD et 4K. Disponible en open source, TestFlight en préparation.</p>
+          <div class="dl-actions">
+            <a class="btn" data-dl-link href="https://github.com/VeltrioApp/veltrio-tvos" target="_blank" rel="noopener" data-i18n="dl.tvosBtn">Voir sur GitHub</a>
+            <a class="dl-sub" href="https://github.com/VeltrioApp/veltrio-tvos/releases" target="_blank" rel="noopener" data-i18n="dl.allBuilds">Releases GitHub →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand-wordmark">Veltrio</div>
+        <p class="footer-note" data-i18n="footer.note">
+          Veltrio est un lecteur multimédia indépendant et open source (MIT / Apache-2.0). L’application ne fournit et n’héberge aucun contenu : vous y connectez uniquement vos propres sources.
+        </p>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/VeltrioApp" target="_blank" rel="noopener">GitHub</a>
+        <a href="#features" data-i18n="nav.features">Fonctionnalités</a>
+        <a href="#download" data-i18n="nav.download">Télécharger</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
