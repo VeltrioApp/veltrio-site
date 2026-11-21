@@ -6,12 +6,13 @@ const I18N = {
     "hero.title": "Un lecteur natif pour toutes vos sources.",
     "hero.lead": "Addons Stremio, Real-Debrid / AllDebrid / TorBox, serveurs Plex / Jellyfin / Emby et IPTV avec EPG — dans une app native libmpv, gratuite, sans pub et open source sur Mac, Windows, iPhone, iPad, Apple TV, Android et Android TV.",
     "hero.cta": "Télécharger Veltrio",
-    "hero.all": "Voir les 6 plateformes",
-    "tab.player": "Lecteur",
+    "hero.all": "Les 6 plateformes",
+    "screens.title": "Sur chaque écran.",
+    "tab.player": "Lecteur 4K",
     "cap.tvhome": "Apple TV · Accueil Cinemeta",
     "cap.iphone": "iPhone · Accueil Liquid Glass & fiche film",
     "cap.ipad": "iPad · Catalogues films & séries",
-    "cap.player": "Apple TV · Lecteur 4K HDR libmpv",
+    "cap.player": "Apple TV · Lecteur 4K HDR libmpv avec timeline focusable à la télécommande",
     "cap.androidtv": "Android TV · Contrôle de la barre de lecture",
     "gal.title": "Du canapé à la poche.",
     "gal.sub": "Même cœur Rust, interface native sur chaque écran.",
@@ -53,11 +54,12 @@ const I18N = {
     "hero.lead": "Stremio addons, Real-Debrid / AllDebrid / TorBox, Plex / Jellyfin / Emby servers, and Live IPTV with EPG — in one free, ad-free, open-source libmpv app for Mac, Windows, iPhone, iPad, Apple TV, Android, and Android TV.",
     "hero.cta": "Download Veltrio",
     "hero.all": "All 6 platforms",
-    "tab.player": "Player",
+    "screens.title": "On every screen.",
+    "tab.player": "4K Player",
     "cap.tvhome": "Apple TV · Cinemeta home",
     "cap.iphone": "iPhone · Liquid Glass home & movie detail",
     "cap.ipad": "iPad · Movies & series catalogs",
-    "cap.player": "Apple TV · 4K HDR libmpv player",
+    "cap.player": "Apple TV · 4K HDR libmpv player with focusable remote timeline",
     "cap.androidtv": "Android TV · Remote timeline scrubbing",
     "gal.title": "From the couch to your pocket.",
     "gal.sub": "One shared Rust core, native UI on every screen.",
@@ -102,7 +104,7 @@ const SLIDES = {
 };
 
 let lang = "fr";
-let slide = "tvos-home";
+let slide = "tvos-player";
 const resolved = {};
 
 function setLang(l) {
