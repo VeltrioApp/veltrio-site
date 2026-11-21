@@ -39,8 +39,8 @@ const I18N = {
     "dl.win": "Windows 10 & 11 (64-bit) · Velopack",
     "dl.and": "Android 8+ · Smartphones & tablettes",
     "dl.atv": "Android TV, Google TV, Shield, Freebox",
-    "dl.ios": "iOS 17+ / iPadOS · TestFlight en préparation",
-    "dl.tvos": "tvOS 18+ · TestFlight en préparation",
+    "dl.ios": "iOS 17+ / iPadOS · IPA pour AltStore, SideStore, Sideloadly",
+    "dl.tvos": "tvOS 18+ · IPA pour Sideloadly / Xcode",
     "dl.soon": "Bientôt",
     "dl.src": "Code source",
     "foot.note": "Veltrio est un lecteur multimédia open source. L’application ne fournit et n’héberge aucun contenu."
@@ -85,8 +85,8 @@ const I18N = {
     "dl.win": "Windows 10 & 11 (64-bit) · Velopack",
     "dl.and": "Android 8+ · Phones & tablets",
     "dl.atv": "Android TV, Google TV, Nvidia Shield",
-    "dl.ios": "iOS 17+ / iPadOS · TestFlight coming soon",
-    "dl.tvos": "tvOS 18+ · TestFlight coming soon",
+    "dl.ios": "iOS 17+ / iPadOS · IPA for AltStore, SideStore, Sideloadly",
+    "dl.tvos": "tvOS 18+ · IPA for Sideloadly / Xcode",
     "dl.soon": "Soon",
     "dl.src": "Source code",
     "foot.note": "Veltrio is an open-source media player. It does not host or provide any content."

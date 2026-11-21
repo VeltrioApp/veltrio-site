@@ -1,0 +1,39 @@
+{
+  "name": "Veltrio",
+  "subtitle": "Every source, one native player.",
+  "description": "Official AltStore / SideStore source for Veltrio — free, ad-free, open-source media player for iPhone and iPad.",
+  "iconURL": "https://veltrioapp.com/assets/icon.png",
+  "website": "https://veltrioapp.com",
+  "tintColor": "#E6A84B",
+  "apps": [
+    {
+      "name": "Veltrio",
+      "bundleIdentifier": "app.veltrio.ios",
+      "developerName": "VeltrioApp",
+      "subtitle": "Stremio addons, debrid, Plex/Jellyfin/Emby & Live IPTV",
+      "localizedDescription": "Free, ad-free, open-source native media player powered by libmpv. Connect your Stremio addons, Real-Debrid / AllDebrid / TorBox / Premiumize, Plex / Jellyfin / Emby servers, and M3U / Xtream IPTV playlists in one app.",
+      "iconURL": "https://veltrioapp.com/assets/icon.png",
+      "tintColor": "#E6A84B",
+      "screenshotURLs": [
+        "https://veltrioapp.com/assets/ios-home.jpg",
+        "https://veltrioapp.com/assets/ios-detail.jpg"
+      ],
+      "versions": [
+        {
+          "version": "0.2.0",
+          "date": "2026-11-21",
+          "localizedDescription": "Initial public iOS & iPadOS IPA release with Stremio account import, debrid PIN login, Plex/Jellyfin/Emby, Live IPTV + EPG, and native iOS 27 Liquid Glass navigation.",
+          "downloadURL": "https://github.com/VeltrioApp/veltrio-ios/releases/download/v0.2.0/Veltrio-iOS.ipa",
+          "size": 22108182,
+          "minOSVersion": "17.0"
+        }
+      ],
+      "appPermissions": {
+        "entitlements": [],
+        "privacy": {
+          "NSLocalNetworkUsageDescription": "Veltrio discovers Chromecasts, local media servers, and Veltrio TVs on your local network."
+        }
+      }
+    }
+  ]
+}
