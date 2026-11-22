@@ -40,7 +40,10 @@ const I18N = {
     "dl.win": "Windows 10 & 11 (64-bit) · Velopack",
     "dl.and": "Android 8+ · Smartphones & tablettes",
     "dl.atv": "Android TV, Google TV, Shield, Freebox",
-    "dl.ios": "iOS 17+ / iPadOS · IPA pour AltStore, SideStore, Sideloadly",
+    "dl.ios": "iOS 17+ / iPadOS · AltStore Classic (pas PAL), SideStore, Sideloadly",
+    "dl.altstore.copy": "Copier la source AltStore",
+    "dl.altstore.copied": "Source copiée ✓",
+    "dl.ios.note": "En Europe, n’utilisez pas AltStore PAL : copiez la source et collez-la dans AltStore Classic → Browse → Sources → +.",
     "dl.tvos": "tvOS 18+ · IPA pour Sideloadly / Xcode",
     "dl.soon": "Bientôt",
     "dl.src": "Code source",
@@ -87,7 +90,10 @@ const I18N = {
     "dl.win": "Windows 10 & 11 (64-bit) · Velopack",
     "dl.and": "Android 8+ · Phones & tablets",
     "dl.atv": "Android TV, Google TV, Nvidia Shield",
-    "dl.ios": "iOS 17+ / iPadOS · IPA for AltStore, SideStore, Sideloadly",
+    "dl.ios": "iOS 17+ / iPadOS · AltStore Classic (not PAL), SideStore, Sideloadly",
+    "dl.altstore.copy": "Copy AltStore source",
+    "dl.altstore.copied": "Source copied ✓",
+    "dl.ios.note": "In the EU, do not use AltStore PAL: copy the source URL and paste it in AltStore Classic → Browse → Sources → +.",
     "dl.tvos": "tvOS 18+ · IPA for Sideloadly / Xcode",
     "dl.soon": "Soon",
     "dl.src": "Source code",
@@ -193,6 +199,19 @@ async function hydrate() {
 
 document.querySelectorAll(".lang-switch button").forEach((b) => b.addEventListener("click", () => setLang(b.dataset.lang)));
 document.querySelectorAll(".shot-tab").forEach((t) => t.addEventListener("click", () => setSlide(t.dataset.slide)));
+
+const copyAlt = document.getElementById("copy-altstore");
+if (copyAlt) {
+  copyAlt.addEventListener("click", async () => {
+    try {
+      await navigator.clipboard.writeText("https://veltrioapp.com/altstore.json");
+      copyAlt.textContent = I18N[lang]["dl.altstore.copied"];
+      setTimeout(() => { copyAlt.textContent = I18N[lang]["dl.altstore.copy"]; }, 2200);
+    } catch {
+      window.prompt("AltStore Classic source URL:", "https://veltrioapp.com/altstore.json");
+    }
+  });
+}
 
 setSlide(slide);
 updateHeroCTA();
