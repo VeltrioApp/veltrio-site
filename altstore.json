@@ -20,6 +20,14 @@
       ],
       "versions": [
         {
+          "version": "0.3.1",
+          "date": "2026-11-22",
+          "localizedDescription": "TMDB trailers, similar titles, Discover filters (platforms & genres), IntroDB auto skip-intro, IPTV favorites & hidden groups, and subtitle size/color settings.",
+          "downloadURL": "https://github.com/VeltrioApp/veltrio-ios/releases/download/v0.3.1/Veltrio-iOS.ipa",
+          "size": 22301311,
+          "minOSVersion": "17.0"
+        },
+        {
           "version": "0.3.0",
           "date": "2026-11-22",
           "localizedDescription": "100% native TMDB catalogs, hero, search & localized metadata (replacing Cinemeta) and live French / English app language switcher.",

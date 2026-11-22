@@ -1,0 +1,74 @@
+name: Sync AltStore Source
+
+on:
+  schedule:
+    - cron: "0 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Update altstore.json from VeltrioApp/veltrio-ios releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 - <<'PY'
+          import json, urllib.request
+
+          req = urllib.request.Request(
+              "https://api.github.com/repos/VeltrioApp/veltrio-ios/releases?per_page=15",
+              headers={"Accept": "application/vnd.github+json", "User-Agent": "veltrio-site-sync"},
+          )
+          with urllib.request.urlopen(req, timeout=20) as r:
+              releases = json.loads(r.read().decode())
+
+          versions = []
+          for rel in releases:
+              if rel.get("draft") or rel.get("prerelease"):
+                  continue
+              tag = (rel.get("tag_name") or "").lstrip("v")
+              if not tag:
+                  continue
+              ipa = next((a for a in rel.get("assets", []) if a.get("name", "").endswith(".ipa")), None)
+              if not ipa:
+                  continue
+              date = (rel.get("published_at") or "")[:10]
+              body = (rel.get("body") or f"Veltrio {tag} for iOS & iPadOS.").strip()
+              if len(body) > 400:
+                  body = body[:397] + "..."
+              versions.append({
+                  "version": tag,
+                  "date": date,
+                  "localizedDescription": body,
+                  "downloadURL": ipa["browser_download_url"],
+                  "size": ipa["size"],
+                  "minOSVersion": "17.0",
+              })
+
+          if not versions:
+              raise SystemExit("No published IPA releases found")
+
+          with open("altstore.json", "r", encoding="utf-8") as f:
+              data = json.load(f)
+
+          data["apps"][0]["versions"] = versions
+          with open("altstore.json", "w", encoding="utf-8") as f:
+              json.dump(data, f, indent=2, ensure_ascii=False)
+              f.write("\n")
+          PY
+
+      - name: Commit & push if changed
+        run: |
+          if ! git diff --quiet altstore.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add altstore.json
+            git commit -m "Auto-sync altstore.json from veltrio-ios releases"
+            git push
+          fi
