@@ -22,7 +22,7 @@
         {
           "version": "0.3.1",
           "date": "2026-11-22",
-          "localizedDescription": "TMDB trailers, similar titles, Discover filters (platforms & genres), IntroDB auto skip-intro, IPTV favorites & hidden groups, and subtitle size/color settings.",
+          "localizedDescription": "**Full Changelog**: https://github.com/VeltrioApp/veltrio-ios/compare/v0.3.0...v0.3.1",
           "downloadURL": "https://github.com/VeltrioApp/veltrio-ios/releases/download/v0.3.1/Veltrio-iOS.ipa",
           "size": 22301311,
           "minOSVersion": "17.0"
@@ -30,7 +30,7 @@
         {
           "version": "0.3.0",
           "date": "2026-11-22",
-          "localizedDescription": "100% native TMDB catalogs, hero, search & localized metadata (replacing Cinemeta) and live French / English app language switcher.",
+          "localizedDescription": "**Full Changelog**: https://github.com/VeltrioApp/veltrio-ios/compare/v0.2.0...v0.3.0",
           "downloadURL": "https://github.com/VeltrioApp/veltrio-ios/releases/download/v0.3.0/Veltrio-iOS.ipa",
           "size": 22233542,
           "minOSVersion": "17.0"
@@ -38,7 +38,7 @@
         {
           "version": "0.2.0",
           "date": "2026-11-21",
-          "localizedDescription": "Initial public iOS & iPadOS IPA release with Stremio account import, debrid PIN login, Plex/Jellyfin/Emby, Live IPTV + EPG, and native iOS 27 Liquid Glass navigation.",
+          "localizedDescription": "**Full Changelog**: https://github.com/VeltrioApp/veltrio-ios/commits/v0.2.0",
           "downloadURL": "https://github.com/VeltrioApp/veltrio-ios/releases/download/v0.2.0/Veltrio-iOS.ipa",
           "size": 22108182,
           "minOSVersion": "17.0"
